@@ -1,6 +1,6 @@
 #! /bin/bash -x
 declare -A expr1
-read -p "enter First nuumber:" a
+read -p "enter First nuumber" a
 read -p "enter Second Number:" b
 read -p "enter Third Number:" c
 
@@ -40,11 +40,13 @@ do
 done
 declare -a b
 
-for ((x=0;x<n;x++))
+for ((x=n;x>=0;x--))
 do
         b[x]=${a[x]}
+        echo ${b[$x]}
 done
-echo "Ascending Order: " ${b[@]}
+
+
 
 
 
