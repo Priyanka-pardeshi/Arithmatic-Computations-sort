@@ -44,7 +44,7 @@ for ((x=0;x<n;x++))
 do
         b[x]=${a[x]}
 done
-echo ${b[@]}
+echo "Ascending Order: " ${b[@]}
 
 
 
